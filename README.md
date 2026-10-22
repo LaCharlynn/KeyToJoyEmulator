@@ -52,6 +52,9 @@ A fonte do Configurador desse design foi recuperada por decompilação e está e
 oficial: é uma reconstrução, com limitações e sem os comentários originais. O
 processo, as evidências e os próximos passos seguros estão em
 [`docs/RECUPERACAO-DESIGN-COMPLETO.md`](docs/RECUPERACAO-DESIGN-COMPLETO.md).
+A conferência visual contra a captura de validação confirmou as cores, as medidas
+e os textos do layout; a comparação não foi pixel a pixel e a fonte não foi
+recompilada.
 
 A pasta [`src-design-novo`](src-design-novo) contém a fonte de um layout
 alternativo, mantida como histórico de desenvolvimento. Ela **não** gera o layout

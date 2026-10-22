@@ -33,4 +33,8 @@ O pacote preserva os binários aprovados. A fonte do Configurador foi recuperada
 por decompilação em `recovered/completo-20261018`; o processo e as limitações
 estão em `docs/RECUPERACAO-DESIGN-COMPLETO.md`.
 
+A conferência visual de 22/10/2026 contra a captura de validação do instalador
+confirmou as cores, as medidas e os textos do layout. A comparação não foi pixel
+a pixel e a fonte recuperada não foi recompilada.
+
 A pasta `src-design-novo` é a fonte do layout alternativo e não gera o `completo`.

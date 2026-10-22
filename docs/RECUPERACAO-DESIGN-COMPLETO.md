@@ -66,6 +66,23 @@ dotnet <caminho-do-ilspycmd.dll> -p --nested-directories `
 - O ícone `app.ico` também foi recuperado.
 - Foram gerados 18 arquivos, sendo 15 arquivos C# com 5.442 linhas no total.
 
+## Conferência visual (22/10/2026)
+
+A conferência foi feita contra a captura `dist\validacao-instalador-completo.png`,
+gerada na validação do instalador com o pacote aprovado. A imagem tem 1286×889
+(inclui moldura/sombra); a janela útil é 1270×850.
+
+- Cores dominantes medidas na captura: `#17191A` (fundo), `#1F2223` (painel),
+  `#292D2E` (painel 2), `#3A3F40` (borda) e `#145C4F` (realce escuro), iguais às
+  definidas em `Configurador\Tema.cs`.
+- O título, a lista de perfis à esquerda, o controle ao centro e o cartão
+  "Mapa do alvo escolhido" à direita aparecem na captura e em
+  `JanelaPrincipal.cs`.
+- O recurso `controle-xbox.png` recuperado tem SHA-256
+  `75D020CB43916EC79614197F758EB6BC43029149D61C5A1B1885A82626B5466D`.
+- Conclusão: a fonte recuperada corresponde ao visual do `completo`. A comparação
+  foi por cores, medidas e textos, não pixel a pixel; a fonte não foi recompilada.
+
 ## O que foi preservado
 
 - O `completo` não foi alterado.
@@ -84,8 +101,9 @@ dotnet <caminho-do-ilspycmd.dll> -p --nested-directories `
   o motor do pad e precisa ser copiada ou recompilada para um build completo.
 - A recuperação cobre o **Configurador** (a interface). O motor do pad não foi
   decompilado nesta etapa.
-- A fonte recuperada ainda não foi compilada nem comparada pixel a pixel com o
-  executável. A correspondência foi verificada por classes, recursos, medidas e cores.
+- A fonte recuperada ainda não foi compilada. A conferência visual de 22/10/2026
+  foi feita por cores, medidas e textos contra a captura do pacote aprovado; não
+  foi uma comparação pixel a pixel.
 - O projeto recuperado não deve ser usado para substituir o pacote aprovado antes de
   uma validação visual e funcional.
 
