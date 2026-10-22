@@ -13,5 +13,14 @@ Isto é uma **reconstrução por decompilação**, não a fonte oficial. O proje
 não está incluída. Veja `..\..\RECUPERACAO-DESIGN-COMPLETO.md` para as
 evidências, limitações e o próximo passo seguro.
 
+## Conferência visual
+
+Em 22/10/2026, a fonte foi conferida contra a captura
+`dist\validacao-instalador-completo.png`: fundo `#17191A`, painel `#1F2223`,
+painel 2 `#292D2E`, borda `#3A3F40` e realce escuro `#145C4F` batem com
+`Configurador\Tema.cs`; a janela de 1270×850 e os textos do layout batem com
+`JanelaPrincipal.cs`. A comparação não foi pixel a pixel e a fonte não foi
+recompilada.
+
 Nenhum binário, layout ou arquivo do `completo` foi alterado para produzir esta
 pasta.
