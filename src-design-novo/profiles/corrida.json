@@ -1,0 +1,146 @@
+{
+  "versao": 1,
+  "perfil_inicial": "corrida-instantanea",
+  "tique_ms": 8,
+  "perfis": {
+    "corrida": {
+      "descricao": "corrida (alternativa: esterco em 120 ms); WASD dirige, Space freio de mao, B/X nos botoes B/X, setas = D-PAD, IJKL = camera",
+      "mapeamentos": [
+        { "tecla": "A",     "tipo": "eixo",  "alvo": "LX", "sentido": -1, "rampa_ms": 120, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "D",     "tipo": "eixo",  "alvo": "LX", "sentido": 1,  "rampa_ms": 120, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "W",     "tipo": "eixo",  "alvo": "RT", "sentido": 1,  "rampa_ms": 300, "valor_maximo": 255 },
+        { "tecla": "S",     "tipo": "eixo",  "alvo": "LT", "sentido": 1,  "rampa_ms": 300, "valor_maximo": 255 },
+        { "tecla": "Space", "tipo": "botao", "alvo": "A" },
+        { "tecla": "B",     "tipo": "botao", "alvo": "B" },
+        { "tecla": "X",     "tipo": "botao", "alvo": "X" },
+        { "tecla": "R",     "tipo": "botao", "alvo": "Y" },
+        { "tecla": "Q",     "tipo": "botao", "alvo": "LB" },
+        { "tecla": "E",     "tipo": "botao", "alvo": "RB" },
+        { "tecla": "Enter", "tipo": "botao", "alvo": "START" },
+        { "tecla": "Backspace", "tipo": "botao", "alvo": "BACK" },
+        { "tecla": "Tab",   "tipo": "botao", "alvo": "LS" },
+        { "tecla": "F",     "tipo": "botao", "alvo": "RS" },
+        { "tecla": "Up",    "tipo": "botao", "alvo": "UP" },
+        { "tecla": "Down",  "tipo": "botao", "alvo": "DOWN" },
+        { "tecla": "Left",  "tipo": "botao", "alvo": "LEFT" },
+        { "tecla": "Right", "tipo": "botao", "alvo": "RIGHT" },
+        { "tecla": "I",     "tipo": "eixo",  "alvo": "RY", "sentido": -1, "rampa_ms": 0, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "K",     "tipo": "eixo",  "alvo": "RY", "sentido": 1,  "rampa_ms": 0, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "J",     "tipo": "eixo",  "alvo": "RX", "sentido": -1, "rampa_ms": 0, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "L",     "tipo": "eixo",  "alvo": "RX", "sentido": 1,  "rampa_ms": 0, "rampa_volta_ms": 0, "valor_maximo": 32767 }
+      ],
+      "zona_morta": 0,
+      "atalhos": [
+        { "combinacao": "Ctrl+Alt+1", "perfil": "corrida" },
+        { "combinacao": "Ctrl+Alt+2", "perfil": "corrida-suave" },
+        { "combinacao": "Ctrl+Alt+3", "perfil": "corrida-instantanea" },
+        { "combinacao": "Ctrl+Alt+4", "perfil": "dpad-ijkl" }
+      ]
+    },
+
+    "corrida-instantanea": {
+      "descricao": "corrida PADRAO (escolhida pelo usuario em 2026-10-18): esterco em 40 ms e aceleracao em 120 ms",
+      "mapeamentos": [
+        { "tecla": "A",     "tipo": "eixo",  "alvo": "LX", "sentido": -1, "rampa_ms": 40, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "D",     "tipo": "eixo",  "alvo": "LX", "sentido": 1,  "rampa_ms": 40, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "W",     "tipo": "eixo",  "alvo": "RT", "sentido": 1,  "rampa_ms": 120, "valor_maximo": 255 },
+        { "tecla": "S",     "tipo": "eixo",  "alvo": "LT", "sentido": 1,  "rampa_ms": 120, "valor_maximo": 255 },
+        { "tecla": "Space", "tipo": "botao", "alvo": "A" },
+        { "tecla": "B",     "tipo": "botao", "alvo": "B" },
+        { "tecla": "X",     "tipo": "botao", "alvo": "X" },
+        { "tecla": "R",     "tipo": "botao", "alvo": "Y" },
+        { "tecla": "Q",     "tipo": "botao", "alvo": "LB" },
+        { "tecla": "E",     "tipo": "botao", "alvo": "RB" },
+        { "tecla": "Enter", "tipo": "botao", "alvo": "START" },
+        { "tecla": "Backspace", "tipo": "botao", "alvo": "BACK" },
+        { "tecla": "Tab",   "tipo": "botao", "alvo": "LS" },
+        { "tecla": "F",     "tipo": "botao", "alvo": "RS" },
+        { "tecla": "Up",    "tipo": "botao", "alvo": "UP" },
+        { "tecla": "Down",  "tipo": "botao", "alvo": "DOWN" },
+        { "tecla": "Left",  "tipo": "botao", "alvo": "LEFT" },
+        { "tecla": "Right", "tipo": "botao", "alvo": "RIGHT" },
+        { "tecla": "I",     "tipo": "eixo",  "alvo": "RY", "sentido": -1, "rampa_ms": 0, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "K",     "tipo": "eixo",  "alvo": "RY", "sentido": 1,  "rampa_ms": 0, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "J",     "tipo": "eixo",  "alvo": "RX", "sentido": -1, "rampa_ms": 0, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "L",     "tipo": "eixo",  "alvo": "RX", "sentido": 1,  "rampa_ms": 0, "rampa_volta_ms": 0, "valor_maximo": 32767 }
+      ],
+      "zona_morta": 0,
+      "atalhos": [
+        { "combinacao": "Ctrl+Alt+1", "perfil": "corrida" },
+        { "combinacao": "Ctrl+Alt+2", "perfil": "corrida-suave" },
+        { "combinacao": "Ctrl+Alt+3", "perfil": "corrida-instantanea" },
+        { "combinacao": "Ctrl+Alt+4", "perfil": "dpad-ijkl" }
+      ]
+    },
+
+    "corrida-suave": {
+      "descricao": "corrida (alternativa lenta: esterco em 600 ms e zona morta de 3000) - o outro extremo, para comparar",
+      "mapeamentos": [
+        { "tecla": "A",     "tipo": "eixo",  "alvo": "LX", "sentido": -1, "rampa_ms": 600, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "D",     "tipo": "eixo",  "alvo": "LX", "sentido": 1,  "rampa_ms": 600, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "W",     "tipo": "eixo",  "alvo": "RT", "sentido": 1,  "rampa_ms": 600, "valor_maximo": 255 },
+        { "tecla": "S",     "tipo": "eixo",  "alvo": "LT", "sentido": 1,  "rampa_ms": 600, "valor_maximo": 255 },
+        { "tecla": "Space", "tipo": "botao", "alvo": "A" },
+        { "tecla": "B",     "tipo": "botao", "alvo": "B" },
+        { "tecla": "X",     "tipo": "botao", "alvo": "X" },
+        { "tecla": "R",     "tipo": "botao", "alvo": "Y" },
+        { "tecla": "Q",     "tipo": "botao", "alvo": "LB" },
+        { "tecla": "E",     "tipo": "botao", "alvo": "RB" },
+        { "tecla": "Enter", "tipo": "botao", "alvo": "START" },
+        { "tecla": "Backspace", "tipo": "botao", "alvo": "BACK" },
+        { "tecla": "Tab",   "tipo": "botao", "alvo": "LS" },
+        { "tecla": "F",     "tipo": "botao", "alvo": "RS" },
+        { "tecla": "Up",    "tipo": "botao", "alvo": "UP" },
+        { "tecla": "Down",  "tipo": "botao", "alvo": "DOWN" },
+        { "tecla": "Left",  "tipo": "botao", "alvo": "LEFT" },
+        { "tecla": "Right", "tipo": "botao", "alvo": "RIGHT" },
+        { "tecla": "I",     "tipo": "eixo",  "alvo": "RY", "sentido": -1, "rampa_ms": 0, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "K",     "tipo": "eixo",  "alvo": "RY", "sentido": 1,  "rampa_ms": 0, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "J",     "tipo": "eixo",  "alvo": "RX", "sentido": -1, "rampa_ms": 0, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "L",     "tipo": "eixo",  "alvo": "RX", "sentido": 1,  "rampa_ms": 0, "rampa_volta_ms": 0, "valor_maximo": 32767 }
+      ],
+      "zona_morta": 3000,
+      "atalhos": [
+        { "combinacao": "Ctrl+Alt+1", "perfil": "corrida" },
+        { "combinacao": "Ctrl+Alt+2", "perfil": "corrida-suave" },
+        { "combinacao": "Ctrl+Alt+3", "perfil": "corrida-instantanea" },
+        { "combinacao": "Ctrl+Alt+4", "perfil": "dpad-ijkl" }
+      ]
+    },
+
+    "dpad-ijkl": {
+      "descricao": "DIAGNOSTICO (pedido do usuario em 2026-10-18): D-PAD nas teclas IJKL e camera nas SETAS - o inverso do perfil de corrida. Serve para testar se a falha do D-PAD no jogo tem a ver com as TECLAS usadas",
+      "mapeamentos": [
+        { "tecla": "I",     "tipo": "botao", "alvo": "UP" },
+        { "tecla": "K",     "tipo": "botao", "alvo": "DOWN" },
+        { "tecla": "J",     "tipo": "botao", "alvo": "LEFT" },
+        { "tecla": "L",     "tipo": "botao", "alvo": "RIGHT" },
+        { "tecla": "Up",    "tipo": "eixo",  "alvo": "RY", "sentido": -1, "rampa_ms": 0, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "Down",  "tipo": "eixo",  "alvo": "RY", "sentido": 1,  "rampa_ms": 0, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "Left",  "tipo": "eixo",  "alvo": "RX", "sentido": -1, "rampa_ms": 0, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "Right", "tipo": "eixo",  "alvo": "RX", "sentido": 1,  "rampa_ms": 0, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "W",     "tipo": "eixo",  "alvo": "RT", "sentido": 1,  "rampa_ms": 120, "valor_maximo": 255 },
+        { "tecla": "S",     "tipo": "eixo",  "alvo": "LT", "sentido": 1,  "rampa_ms": 120, "valor_maximo": 255 },
+        { "tecla": "A",     "tipo": "eixo",  "alvo": "LX", "sentido": -1, "rampa_ms": 40, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "D",     "tipo": "eixo",  "alvo": "LX", "sentido": 1,  "rampa_ms": 40, "rampa_volta_ms": 0, "valor_maximo": 32767 },
+        { "tecla": "Space", "tipo": "botao", "alvo": "A" },
+        { "tecla": "B",     "tipo": "botao", "alvo": "B" },
+        { "tecla": "X",     "tipo": "botao", "alvo": "X" },
+        { "tecla": "R",     "tipo": "botao", "alvo": "Y" },
+        { "tecla": "Q",     "tipo": "botao", "alvo": "LB" },
+        { "tecla": "E",     "tipo": "botao", "alvo": "RB" },
+        { "tecla": "Enter", "tipo": "botao", "alvo": "START" },
+        { "tecla": "Backspace", "tipo": "botao", "alvo": "BACK" },
+        { "tecla": "Tab",   "tipo": "botao", "alvo": "LS" },
+        { "tecla": "F",     "tipo": "botao", "alvo": "RS" }
+      ],
+      "zona_morta": 0,
+      "atalhos": [
+        { "combinacao": "Ctrl+Alt+1", "perfil": "corrida" },
+        { "combinacao": "Ctrl+Alt+2", "perfil": "corrida-suave" },
+        { "combinacao": "Ctrl+Alt+3", "perfil": "corrida-instantanea" },
+        { "combinacao": "Ctrl+Alt+4", "perfil": "dpad-ijkl" }
+      ]
+    }
+  }
+}

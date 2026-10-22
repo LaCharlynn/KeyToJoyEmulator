@@ -1,0 +1,43 @@
+{
+  "versao": 1,
+  "perfil_inicial": "navegacao",
+  "tique_ms": 8,
+  "perfis": {
+    "navegacao": {
+      "descricao": "usar o teclado como se fosse um controle",
+      "mapeamentos": [
+        { "tecla": "Enter",   "tipo": "botao", "alvo": "A" },
+        { "tecla": "Space",   "tipo": "botao", "alvo": "B" },
+        { "tecla": "D",       "tipo": "eixo",  "alvo": "LX", "sentido": 1,  "rampa_ms": 150, "valor_maximo": 32767 },
+        { "tecla": "A",       "tipo": "eixo",  "alvo": "LX", "sentido": -1, "rampa_ms": 150, "valor_maximo": 32767 },
+        { "tecla": "S",       "tipo": "eixo",  "alvo": "LY", "sentido": 1,  "rampa_ms": 150, "valor_maximo": 32767 },
+        { "tecla": "W",       "tipo": "eixo",  "alvo": "LY", "sentido": -1, "rampa_ms": 150, "valor_maximo": 32767 },
+        { "tecla": "Left",    "tipo": "eixo",  "alvo": "RX", "sentido": -1, "rampa_ms": 200, "valor_maximo": 32767 },
+        { "tecla": "Right",   "tipo": "eixo",  "alvo": "RX", "sentido": 1,  "rampa_ms": 200, "valor_maximo": 32767 },
+        { "tecla": "Up",      "tipo": "botao", "alvo": "UP" },
+        { "tecla": "Down",    "tipo": "botao", "alvo": "DOWN" },
+        { "tecla": "LeftShift", "tipo": "eixo", "alvo": "RT", "sentido": 1,  "rampa_ms": 80,  "valor_maximo": 255 },
+        { "tecla": "LeftControl", "tipo": "eixo", "alvo": "LT", "sentido": 1, "rampa_ms": 80, "valor_maximo": 255 }
+      ],
+      "zona_morta": 0,
+      "atalhos": [
+        { "combinacao": "Ctrl+Alt+1", "perfil": "jogo-a" },
+        { "combinacao": "Ctrl+Alt+2", "perfil": "navegacao" }
+      ]
+    },
+    "jogo-a": {
+      "descricao": "exemplo de segundo perfil (zona morta alta e rampa lenta, usados nos testes T4)",
+      "mapeamentos": [
+        { "tecla": "Enter", "tipo": "botao", "alvo": "START" },
+        { "tecla": "J",     "tipo": "botao", "alvo": "X" },
+        { "tecla": "I",     "tipo": "botao", "alvo": "X" },
+        { "tecla": "K",     "tipo": "botao", "alvo": "Y" },
+        { "tecla": "D",     "tipo": "eixo",  "alvo": "LX", "sentido": 1, "rampa_ms": 1000, "valor_maximo": 32767 }
+      ],
+      "zona_morta": 8000,
+      "atalhos": [
+        { "combinacao": "Ctrl+Alt+2", "perfil": "navegacao" }
+      ]
+    }
+  }
+}

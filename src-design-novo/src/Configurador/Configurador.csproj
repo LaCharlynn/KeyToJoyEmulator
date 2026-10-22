@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>KeyToJoyEmulator-Configurador</AssemblyName>
+    <RootNamespace>Configurador</RootNamespace>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <PlatformTarget>x64</PlatformTarget>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <NoWarn>CA1416</NoWarn>
+    <!-- O ICONE DO PROGRAMA: a mesma logo do pad (src\recursos\KeyToJoyEmulator.ico). Como nenhuma
+         janela define Icon proprio, e este icone que aparece na barra de tarefas e no canto da janela. -->
+    <ApplicationIcon>..\recursos\KeyToJoyEmulator.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Reaproveita o nucleo: modelo do perfil, validacao (CarregadorPerfil), gravacao
+         (GravadorPerfil), tabela de teclas e o gancho de teclado. Uma regra so, testada pela
+         bateria de logica. A interface NAO cria controle virtual: ela comanda o KeyToJoyEmulator.exe. -->
+    <ProjectReference Include="..\MyVersion\MyVersion.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- O DESENHO DO CONTROLE: a imagem que o usuario mandou em 2026-10-18, com o miolo da carcaca ja
+         preenchido de branco. Vai EMBUTIDA (e nao como arquivo ao lado) para o configurador continuar
+         sendo um executavel unico, do jeito que ele e publicado. -->
+    <None Remove="recursos\controle-xbox.png" />
+    <EmbeddedResource Include="recursos\controle-xbox.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- A FONTE DA INTERFACE: JetBrains Mono (licenca SIL Open Font License 1.1), a mesma fonte do
+         desenho novo aprovado pelo usuario em 2026-10-19. Vai EMBUTIDA (e nao instalada no Windows)
+         para o configurador continuar sendo um executavel unico e a fonte nao depender da maquina.
+         A licenca (OFL.txt) vai junto porque a OFL pede que a licenca acompanhe a fonte. -->
+    <EmbeddedResource Include="recursos\fontes\JetBrainsMono-Regular.ttf" />
+    <EmbeddedResource Include="recursos\fontes\JetBrainsMono-Medium.ttf" />
+    <EmbeddedResource Include="recursos\fontes\JetBrainsMono-SemiBold.ttf" />
+    <EmbeddedResource Include="recursos\fontes\JetBrainsMono-Bold.ttf" />
+    <EmbeddedResource Include="recursos\fontes\OFL.txt" />
+  </ItemGroup>
+
+</Project>

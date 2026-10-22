@@ -1,0 +1,29 @@
+# Builds e artefatos locais
+**/bin/
+**/obj/
+dist/
+dist-leve/
+.vs/
+*.user
+*.suo
+
+# Saídas, logs, backups e perfis pessoais
+*.log
+*.bak
+*.tmp
+backups/
+re/
+profiles/*.local.json
+
+# Credenciais e tokens
+devices.json
+smartthings_tokens.json
+*.tokens.json
+*.pfx
+*.snk
+
+# Pacotes gerados (as releases são publicadas como assets)
+*.zip
+*.7z
+*.exe
+*.msi

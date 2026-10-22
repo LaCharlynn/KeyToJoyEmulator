@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>KeyToJoyEmulator</AssemblyName>
+    <RootNamespace>MyVersion</RootNamespace>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <PlatformTarget>x64</PlatformTarget>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <NoWarn>CA1416</NoWarn>
+    <!-- O ICONE DO PROGRAMA: a logo que o usuario mandou em 2026-10-18 (direcional). O .ico vive em
+         src\recursos e e usado pelos DOIS programas deste pacote (o pad e a interface). E ele que
+         aparece no Explorer e na barra de tarefas. -->
+    <ApplicationIcon>..\recursos\KeyToJoyEmulator.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nefarius.ViGEm.Client" Version="1.21.256" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- o cliente nativo do ViGEmBus precisa ficar ao lado do executavel -->
+    <None Include="..\..\native\ViGEmClient.dll" Link="ViGEmClient.dll" CopyToOutputDirectory="PreserveNewest" />
+    <!-- perfis de exemplo vao junto para o diretorio de saida -->
+    <None Include="..\..\profiles\**\*.json" Link="profiles\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

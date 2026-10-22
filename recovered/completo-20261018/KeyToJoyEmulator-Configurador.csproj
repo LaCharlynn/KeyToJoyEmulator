@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>KeyToJoyEmulator-Configurador</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>netcoreapp8.0</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Configurador.recursos.controle-xbox.png" />
+    <EmbeddedResource Include="Configurador.recursos.controle-xbox.png" LogicalName="Configurador.recursos.controle-xbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="KeyToJoyEmulator">
+      <HintPath>..\..\..\..\..\AppData\Local\Temp\.net\KeyToJoyEmulator-Configurador\FtnP7DnXnZpYEPdUCWnvrMl7rKdaK8Y=\KeyToJoyEmulator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
